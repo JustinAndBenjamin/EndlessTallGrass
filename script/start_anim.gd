@@ -21,4 +21,3 @@ func anim_play(next_scene_path: String = "") -> void:
 	
 	if next_scene_path != "":
 		get_tree().change_scene_to_file(next_scene_path)
-		

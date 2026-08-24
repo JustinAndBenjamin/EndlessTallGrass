@@ -3,12 +3,13 @@
 [ext_resource type="Script" uid="uid://kby2icutldgx" path="res://script/game_manager.gd" id="1_21xkr"]
 [ext_resource type="PackedScene" uid="uid://c5laq2ns3o04k" path="res://Scenes/player.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://bap6386e1jobk" path="res://Scenes/inventory.tscn" id="3_ee4r6"]
-[ext_resource type="Texture2D" uid="uid://dsiu4o6v78ha1" path="res://Assets/Sprites/monpokball.png" id="3_h1bgf"]
+[ext_resource type="Texture2D" uid="uid://btmqucwhpn8n0" path="res://Assets/Sprites/monpokball.png" id="3_h1bgf"]
 [ext_resource type="PackedScene" uid="uid://titfgcjosssa" path="res://Scenes/on_monpok_captured.tscn" id="3_wsu2k"]
 [ext_resource type="AudioStream" uid="uid://886j6jcfdc3u" path="res://Assets/sounds/SoundtrackStarfieldSavePoint.mp3" id="7_344ge"]
-[ext_resource type="PackedScene" uid="uid://b4wxbufomix3l" path="res://Scenes/map_world_monpok.res" id="12_6iyac"]
+[ext_resource type="PackedScene" uid="uid://daii8sfm5jyug" path="res://Scenes/map_house_start.res" id="12_6iyac"]
 [ext_resource type="PackedScene" uid="uid://bolodsplnqnqu" path="res://addons/virtual_joystick/virtual_joystick.tscn" id="12_fdnlq"]
 [ext_resource type="Script" uid="uid://dgnvp3ka8drhd" path="res://script/touch_buttons.gd" id="12_jkdf5"]
+[ext_resource type="PackedScene" uid="uid://b4wxbufomix3l" path="res://Scenes/map_world_monpok.res" id="13_fdnlq"]
 [ext_resource type="PackedScene" uid="uid://cmfshvvasmq6w" path="res://Scenes/monpokball_giver.tscn" id="16_k12tt"]
 [ext_resource type="Texture2D" uid="uid://d3stilv7g8gvp" path="res://Assets/Sprites/essential_spritesheet.png" id="21_ee4r6"]
 [ext_resource type="PackedScene" uid="uid://b1636uqslu58g" path="res://Scenes/start_anim.tscn" id="24_3pmx8"]
@@ -130,6 +131,8 @@ limit_smoothed = true
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
+[node name="TileMap" parent="Player/Camera2D" unique_id=1655362443 instance=ExtResource("12_6iyac")]
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=562311448]
 stream = ExtResource("7_344ge")
 autoplay = true
@@ -160,7 +163,7 @@ action_down = &"move_down"
 [node name="Dropper" parent="." unique_id=1360828205 instance=ExtResource("16_k12tt")]
 position = Vector2(348, 32)
 
-[node name="TileMap" parent="." unique_id=1655362443 instance=ExtResource("12_6iyac")]
+[node name="TileMap" parent="." unique_id=1113710109 instance=ExtResource("13_fdnlq")]
 
 [connection signal="pressed" from="GameManager/CanvasLayer/Control/TextureButton" to="GameManager" method="_on_touch_screen_button_pressed"]
 [connection signal="pressed" from="GameManager/CanvasLayer/Inventory/Control2/TextureButton" to="GameManager" method="_on_touch_screen_button_pressed"]

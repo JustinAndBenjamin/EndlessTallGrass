@@ -13,9 +13,9 @@ config_version=5
 config/name="EndlessTallGrass"
 run/main_scene="uid://daigvy7a3x4jm"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-boot_splash/bg_color=Color(0.14117648, 0.73333335, 0.14117648, 1)
+boot_splash/stretch_mode=4
 boot_splash/use_filter=false
-boot_splash/image="uid://dvj2i5xw5dh8m"
+boot_splash/image="uid://fm1skfx328sd"
 config/icon="uid://j6fy6xybktxd"
 
 [display]
