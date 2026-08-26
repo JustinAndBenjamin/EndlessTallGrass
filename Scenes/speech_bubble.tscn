@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bh103fta4iryv"]
+
+[ext_resource type="Texture2D" uid="uid://4lsjr07msy3" path="res://Assets/Sprites/SpeechBubble.png" id="1_0ss60"]
+
+[node name="SpeechBubble" type="Control" unique_id=441984181]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=402947514]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -179.0
+offset_right = 159.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Label" type="Label" parent="." unique_id=130810096]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 523.0
+offset_right = 684.0
+offset_bottom = 593.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+text = "Test"
