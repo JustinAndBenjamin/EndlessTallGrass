@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bolodsplnqnqu"]
 
 [ext_resource type="Script" uid="uid://d361t8y6sahvi" path="res://addons/virtual_joystick/virtual_joystick.gd" id="1_8i1q7"]
-[ext_resource type="Texture2D" uid="uid://clc2p1pp5y2lh" path="res://addons/virtual_joystick/textures/base_texture.svg" id="2_frtuw"]
-[ext_resource type="Texture2D" uid="uid://ufha6ls7safh" path="res://addons/virtual_joystick/textures/stick_texture.svg" id="3_d1xpv"]
+[ext_resource type="Texture2D" uid="uid://bwvrtfcuackke" path="res://addons/virtual_joystick/textures/base_texture.svg" id="2_frtuw"]
+[ext_resource type="Texture2D" uid="uid://bnkoss3f2che8" path="res://addons/virtual_joystick/textures/stick_texture.svg" id="3_d1xpv"]
 
 [node name="VirtualJoystick" type="Control" unique_id=912784726]
 layout_mode = 3

@@ -1,6 +1,5 @@
 extends FoldableContainer
 
-
 @export var virtual_joystick: VirtualJoystick
 
 func _ready() -> void:
@@ -24,8 +23,8 @@ func _on_disabled_check_box_pressed() -> void:
 
 
 func _on_mode_option_item_selected(index: int) -> void:
-	var mode_key: StringName = VirtualJoystick.Modes.find_key(index)
-	var mode: VirtualJoystick.Modes = VirtualJoystick.Modes[mode_key]
+	var mode_key: StringName = virtual_joystick.Modes.find_key(index)
+	var mode: CustomVirtualJoystick.Modes = virtual_joystick.Modes[mode_key]
 	virtual_joystick.mode = mode
 
 
