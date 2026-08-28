@@ -117,7 +117,7 @@ text = "0"
 visible = false
 
 [node name="Player" parent="." unique_id=2134270175 instance=ExtResource("2_bo1nx")]
-position = Vector2(133, 173)
+position = Vector2(0, -5)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=451561475]
 zoom = Vector2(3.5, 3.5)
