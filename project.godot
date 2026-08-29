@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/stretch_mode=4
 boot_splash/use_filter=false
 boot_splash/image="uid://0un1sgmcxd8p"
-config/icon="uid://j6fy6xybktxd"
+config/icon="uid://0un1sgmcxd8p"
 
 [display]
 
