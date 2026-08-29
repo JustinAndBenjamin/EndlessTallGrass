@@ -14,8 +14,11 @@ script = ExtResource("1_f4c0y")
 full_time = 2.0
 text = "Hallo, das ist eine NPC Speech Bubble"
 
-[node name="Bubble" type="TextureRect" parent="." unique_id=402947514]
-layout_mode = 1
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1181038367]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=902030883]
+
+[node name="Bubble" type="TextureRect" parent="CanvasLayer" unique_id=402947514]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -28,8 +31,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Bubble2" type="TextureRect" parent="." unique_id=1269957242]
-layout_mode = 1
+[node name="Bubble2" type="TextureRect" parent="CanvasLayer" unique_id=1269957242]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -42,8 +44,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Bubble6" type="TextureRect" parent="." unique_id=42486299]
-layout_mode = 1
+[node name="Bubble6" type="TextureRect" parent="CanvasLayer" unique_id=42486299]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -56,8 +57,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Bubble3" type="TextureRect" parent="." unique_id=469692219]
-layout_mode = 1
+[node name="Bubble3" type="TextureRect" parent="CanvasLayer" unique_id=469692219]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -70,8 +70,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Bubble4" type="TextureRect" parent="." unique_id=1242470840]
-layout_mode = 1
+[node name="Bubble4" type="TextureRect" parent="CanvasLayer" unique_id=1242470840]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -84,8 +83,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Bubble5" type="TextureRect" parent="." unique_id=1713434843]
-layout_mode = 1
+[node name="Bubble5" type="TextureRect" parent="CanvasLayer" unique_id=1713434843]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -98,8 +96,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Text" type="Label" parent="." unique_id=130810096]
-layout_mode = 0
+[node name="Text" type="Label" parent="CanvasLayer" unique_id=130810096]
 offset_left = 20.0
 offset_top = 525.0
 offset_right = 1093.0
@@ -107,5 +104,3 @@ offset_bottom = 595.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 64
-
-[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1181038367]
