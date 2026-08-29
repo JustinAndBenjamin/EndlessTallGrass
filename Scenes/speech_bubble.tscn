@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bh103fta4iryv"]
 
 [ext_resource type="Texture2D" uid="uid://4lsjr07msy3" path="res://Assets/Sprites/SpeechBubble.png" id="1_0ss60"]
+[ext_resource type="Script" uid="uid://cb4ad0xnohxi4" path="res://script/speech.gd" id="1_f4c0y"]
 
 [node name="SpeechBubble" type="Control" unique_id=441984181]
 layout_mode = 3
@@ -9,8 +10,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_f4c0y")
+full_time = 2.0
+text = "Hallo, das ist eine NPC Speech Bubble"
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=402947514]
+[node name="Bubble" type="TextureRect" parent="." unique_id=402947514]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -24,13 +28,84 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0ss60")
 
-[node name="Label" type="Label" parent="." unique_id=130810096]
+[node name="Bubble2" type="TextureRect" parent="." unique_id=1269957242]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 159.0
+offset_top = -179.0
+offset_right = 338.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Bubble6" type="TextureRect" parent="." unique_id=42486299]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 338.0
+offset_top = -179.0
+offset_right = 517.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Bubble3" type="TextureRect" parent="." unique_id=469692219]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -199.0
+offset_top = -179.0
+offset_right = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Bubble4" type="TextureRect" parent="." unique_id=1242470840]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -378.0
+offset_top = -179.0
+offset_right = -199.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Bubble5" type="TextureRect" parent="." unique_id=1713434843]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -556.0
+offset_top = -179.0
+offset_right = -377.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0ss60")
+
+[node name="Text" type="Label" parent="." unique_id=130810096]
 layout_mode = 0
-offset_left = 588.0
-offset_top = 523.0
-offset_right = 684.0
-offset_bottom = 593.0
+offset_left = 20.0
+offset_top = 525.0
+offset_right = 1093.0
+offset_bottom = 595.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 64
-text = "Test"
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1181038367]
