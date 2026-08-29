@@ -8,9 +8,9 @@ func speech() -> void:
 	var wait_time : float = full_time / text_length
 	
 	for buchstabe in text:
-		print(buchstabe)
+		$Text.text += str(buchstabe)
 		var timer = get_tree().create_timer(wait_time)
 		await timer.timeout
 
-		
-	
+func _ready() -> void:
+	speech()
