@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://4lsjr07msy3" path="res://Assets/Sprites/SpeechBubble.png" id="1_0ss60"]
 [ext_resource type="Script" uid="uid://cb4ad0xnohxi4" path="res://script/speech.gd" id="1_f4c0y"]
+[ext_resource type="AudioStream" uid="uid://bipxlei7v7r67" path="res://Assets/sounds/SFX/grass_old.mp3" id="2_5ioj6"]
 
 [node name="SpeechBubble" type="Control" unique_id=441984181]
 layout_mode = 3
@@ -11,10 +12,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_f4c0y")
-full_time = 2.0
-text = "Hallo, das ist eine NPC Speech Bubble"
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1181038367]
+stream = ExtResource("2_5ioj6")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=902030883]
 
