@@ -1,18 +1,12 @@
-extends Control
+extends Node
 
 @onready var Audio = $Audio
 @onready var full_time : float
-@onready var text : String
+@onready var voice : AudioStream
 @onready var canvas_layer = $CanvasLayer
 
-func _ready() -> void:
-	if Audio.stream:
-		full_time = Audio.stream.get_length()
-	else:
-		full_time = 0.0 # Standardwert, falls kein Ton existiert
 
-
-func speech() -> void:
+func speech(text) -> void:
 	canvas_layer.show()
 	
 	var text_length = text.length()
@@ -28,3 +22,7 @@ func speech() -> void:
 	await delete_time.timeout
 	$CanvasLayer/Text.text = ""
 	canvas_layer.hide()
+
+func setup_speech(audio : AudioStream) -> void:
+	Audio.set_stream(audio)
+	full_time = Audio.stream.get_length()
