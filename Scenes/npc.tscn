@@ -17,7 +17,6 @@ size = Vector2(134, 122)
 [node name="NPC" type="CharacterBody2D" unique_id=901332252]
 collision_mask = 2
 script = ExtResource("1_xxsvc")
-text = "Hallo, das ist eine NPC Speech Bubble"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=24401151]
 shape = SubResource("RectangleShape2D_hhfpc")
@@ -33,6 +32,5 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_xxsvc")
 
 [node name="SpeechBubble" parent="." unique_id=441984181 instance=ExtResource("3_g6unj")]
-visible = false
 
 [connection signal="body_entered" from="SpeechTrigger" to="." method="_on_speech_trigger_body_entered"]
