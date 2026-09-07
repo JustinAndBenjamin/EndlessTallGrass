@@ -53,7 +53,7 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
 
 > [!NOTE]
 > 
-> Version: 1.9.9
+> Version: 1.9.9 -> currently working at the game to completely change everything.
 >
 > Worktime: 50 hours
 >
