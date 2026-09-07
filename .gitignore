@@ -1,11 +1,6 @@
-# Godot-spezifische Cache- und Import-Ordner
 .godot/
-
-# Godot 3.x Altlasten (falls Sie ein älteres Projekt nutzen)
 .import/
 export_presets.cfg
-
-# Von Godot exportierte Binärdateien (Anwendungs-Builds)
 *.uid
 *.html
 *.js
@@ -13,9 +8,9 @@ export_presets.cfg
 *.pck
 *.apk
 *.aar
-
-# Lokale Editoreinstellungen und temporäre Dateien
 .mono/
 data_mono/
 mono_crash*.log
+/android
+/build
 
