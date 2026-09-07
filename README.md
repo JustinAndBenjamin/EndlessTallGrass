@@ -40,6 +40,7 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
 
 ***Sound:***
 JustinCase-306
+
 Thanks to CoffeeVampir3 and Facebookresearch (Meta) for:
 
 the GitHub repository https://github.com/CoffeeVampir3/audiocraft-webui and https://github.com/facebookresearch/audiocraft.
