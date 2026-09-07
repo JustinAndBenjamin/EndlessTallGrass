@@ -33,13 +33,19 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
 <br>
 
 ***Graphics:***
-JustinCase-306 + Benjamin-306 (created with piskel.com)
+  - Tilesets: JustinCase-306
+  - Animations: JustinCase-306
+  - Placeholder textures: Benjamin-306
+  
 
 ***Sound:***
-JustinCase-306 (AI - generated content)
+JustinCase-306
+Thanks to CoffeeVampir3 and Facebookresearch (Meta) for:
+the GitHub repository https://github.com/CoffeeVampir3/audiocraft-webui and https://github.com/facebookresearch/audiocraft.
 
 ***Coding:***
-Benjamin-306 + JustinCase-306
+Benjamin-306 (yes you did more than me but STOP saying it every 2 seconds!) + JustinCase-306
+Thanks to all the developers of Godot Engine!
 
 </details>
 <br>
