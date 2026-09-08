@@ -14,13 +14,13 @@ func speech(text) -> void:
 	
 	Audio.play()
 	for buchstabe in text:
-		$CanvasLayer/Text.text += str(buchstabe)
+		$CanvasLayer/Control/MarginContainer/Label.text += str(buchstabe)
 		var timer = get_tree().create_timer(wait_time)
 		await timer.timeout
 	
 	var delete_time = get_tree().create_timer(2)
 	await delete_time.timeout
-	$CanvasLayer/Text.text = ""
+	$CanvasLayer/Control/MarginContainer/Label.text = ""
 	canvas_layer.hide()
 
 func setup_speech(audio : AudioStream) -> void:

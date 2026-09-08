@@ -9,93 +9,40 @@ script = ExtResource("1_f4c0y")
 [node name="Audio" type="AudioStreamPlayer2D" parent="." unique_id=262373778]
 bus = &"Voice"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=902030883]
-visible = false
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1082412016]
 
-[node name="Bubble" type="TextureRect" parent="CanvasLayer" unique_id=402947514]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -179.0
-offset_right = 159.0
-grow_horizontal = 2
-grow_vertical = 0
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=351141887]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/Control" unique_id=747427660]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 552.0
+offset_right = 1110.0
+offset_bottom = 648.0
 texture = ExtResource("1_0ss60")
+patch_margin_left = 535
+patch_margin_right = 535
 
-[node name="Bubble2" type="TextureRect" parent="CanvasLayer" unique_id=1269957242]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 159.0
-offset_top = -179.0
-offset_right = 338.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("1_0ss60")
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control" unique_id=1663828235]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 571.0
+offset_right = 1110.0
+offset_bottom = 630.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
-[node name="Bubble6" type="TextureRect" parent="CanvasLayer" unique_id=42486299]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 338.0
-offset_top = -179.0
-offset_right = 517.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("1_0ss60")
-
-[node name="Bubble3" type="TextureRect" parent="CanvasLayer" unique_id=469692219]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -199.0
-offset_top = -179.0
-offset_right = -20.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("1_0ss60")
-
-[node name="Bubble4" type="TextureRect" parent="CanvasLayer" unique_id=1242470840]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -378.0
-offset_top = -179.0
-offset_right = -199.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("1_0ss60")
-
-[node name="Bubble5" type="TextureRect" parent="CanvasLayer" unique_id=1713434843]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -556.0
-offset_top = -179.0
-offset_right = -377.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = ExtResource("1_0ss60")
-
-[node name="Text" type="Label" parent="CanvasLayer" unique_id=130810096]
-offset_left = 20.0
-offset_top = 525.0
-offset_right = 1093.0
-offset_bottom = 595.0
+[node name="Label" type="Label" parent="CanvasLayer/Control/MarginContainer" unique_id=651151061]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 32
+vertical_alignment = 1
 autowrap_mode = 3
