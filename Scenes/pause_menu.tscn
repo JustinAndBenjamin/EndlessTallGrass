@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dafbnkgmjxy4j"]
 
-[ext_resource type="Script" uid="uid://131omw1noie3" path="res://script/pause_menu.gd" id="1_emv3i"]
+[ext_resource type="Script" uid="uid://bp46hq02bg1uc" path="res://script/pause_menu.gd" id="1_emv3i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_emv3i"]
 
@@ -70,7 +70,7 @@ offset_bottom = 558.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 64
-text = "Beenden"
+text = "Beenden und Speichern"
 icon = SubResource("AtlasTexture_emv3i")
 metadata/_edit_use_anchors_ = true
 

@@ -2,6 +2,19 @@ extends Control
 
 var inventory = [null, null, null, null, null, null, null, null]
 var full = bool(false)
+
+func _ready() -> void:
+	if Global.hat_inventar:
+		inventory = Global.inventar
+		Global.hat_inventar = false
+
+func _process(delta: float) -> void:
+	var i = 0
+	for object in inventory:
+		i += 1
+		if typeof(object) == TYPE_STRING:
+			var direction_label = get_node("Monpok" + str(i) + "/Label")
+			direction_label.text = object
 	
 func add(TEXT, IMAGE):
 	full = false

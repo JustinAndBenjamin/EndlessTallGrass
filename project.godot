@@ -18,6 +18,11 @@ boot_splash/use_filter=false
 boot_splash/image="uid://0un1sgmcxd8p"
 config/icon="uid://0un1sgmcxd8p"
 
+[autoload]
+
+SaveSystem="*uid://b7y7bgxkwyvw1"
+Global="*uid://fmbaq7sauk2f"
+
 [display]
 
 window/stretch/mode="canvas_items"

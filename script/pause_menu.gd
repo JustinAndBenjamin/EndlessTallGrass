@@ -20,6 +20,13 @@ func _on_continue_pressed() -> void:
 
 
 func _on_quit_pressed() -> void:
+	var scene_path = get_tree().current_scene.scene_file_path
+	var player_pos = %Player.global_position
+	var inventory = []
+	inventory = %Inventory.inventory
+	SaveSystem.save_game(scene_path, player_pos, inventory)
+	
+	
 	get_tree().quit()
 
 
