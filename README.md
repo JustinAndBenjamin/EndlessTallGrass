@@ -49,6 +49,6 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
 > 
 > Version: (nothing, but technically 1.9.9) -> currently working at the game to completely change everything.
 >
-> Worktime: 55 hours
+> Worktime: 57 hours
 >
 > Note for developers: 4GDBo full GDJ
