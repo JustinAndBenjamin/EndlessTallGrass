@@ -9,6 +9,12 @@ var balls: int = int(0)
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var tap: AudioStreamPlayer2D = $tap
 @onready var tap_timer: Timer = $tap_timer
+
+func _ready() -> void:
+	if Global.hat_position:
+		global_position = Global.geladene_position
+		Global.hat_position = false
+
 func _physics_process(delta: float) -> void:
 	%GameManager.update_balls(balls)
 	if %GameManager.all_locked == true:
