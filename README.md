@@ -38,8 +38,7 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
   - [Audiocraft by Meta](https://github.com/facebookresearch/audiocraft)
 
 ***Coding:***
-- **Code:** Benjamin-306 & JustinCase-306
-- *Note:* Yes Benjamin, you did more, but STOP saying it every 2 seconds!
+- **Code:** Benjamin-306 (& JustinCase-306, and yes, you wrote 30 lines, but that doesn't count)
 - *Thanks to all the developers of Godot Engine!*
 
 </details>
