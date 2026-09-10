@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dafbnkgmjxy4j"]
+
+[ext_resource type="Script" uid="uid://bp46hq02bg1uc" path="res://script/pause_menu.gd" id="1_emv3i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emv3i"]
+
+[node name="PauseMenu" type="Control" unique_id=448313180]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emv3i")
+
+[node name="PauseMenu" type="CanvasLayer" parent="." unique_id=1116852355]
+
+[node name="Visibility" type="Control" parent="PauseMenu" unique_id=661936600]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Continue" type="Button" parent="PauseMenu/Visibility" unique_id=1084752404]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.1329865
+anchor_top = 0.15
+anchor_right = 3.5670135
+anchor_bottom = 0.31975326
+offset_left = 314.68054
+offset_top = 90.0
+offset_right = 560.31946
+offset_bottom = 161.20987
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "Fortsetzen"
+icon = SubResource("AtlasTexture_emv3i")
+metadata/_edit_use_anchors_ = true
+
+[node name="GameMenu" type="Button" parent="PauseMenu/Visibility" unique_id=214666938]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25694445
+anchor_top = 0.36728394
+anchor_right = 0.7526042
+anchor_bottom = 0.537037
+offset_left = 285.72223
+offset_top = 313.30865
+offset_right = 809.8958
+offset_bottom = 384.51852
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "Zurück zum Hauptmenü"
+icon = SubResource("AtlasTexture_emv3i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="PauseMenu/Visibility" unique_id=819258061]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 453.5
+offset_top = 480.0
+offset_right = 658.5
+offset_bottom = 558.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "Beenden und Speichern"
+icon = SubResource("AtlasTexture_emv3i")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="PauseMenu/Visibility/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="PauseMenu/Visibility/GameMenu" to="." method="_on_game_menu_pressed"]
+[connection signal="pressed" from="PauseMenu/Visibility/Quit" to="." method="_on_quit_pressed"]

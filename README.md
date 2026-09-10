@@ -4,13 +4,7 @@
 <summary><b>View Info</b></summary>
 <br>
 
-Monpok is a game where you must find creatures called
-monpoks and collect them.
-
-But attention, you can only collect them if...
-
-- you have enough space in your inventory and
-- enough balls to catch them.
+Decay Fields is a 2D Pixel Art game which is still in the phase of beginning developing. I will tell you nothing about it except the developers are @Benjamin-306 and @JustinCase-306.
 
 </details>
 
@@ -44,17 +38,20 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
   - [Audiocraft by Meta](https://github.com/facebookresearch/audiocraft)
 
 ***Coding:***
-- **Code:** Benjamin-306 & JustinCase-306
-- *Note:* Yes Benjamin, you did more, but STOP saying it every 2 seconds!
+- **Code:** Benjamin-306 + JustinCase306
 - *Thanks to all the developers of Godot Engine!*
 
 </details>
+
+# DEVELOPER INFO
+
+Note for developers: 4GDBo full GDJ
 <br>
+Every commit involving AI must be marked with an '*' starting with commit 252.
 
 > [!NOTE]
 > 
-> Version: 1.9.9 -> currently working at the game to completely change everything.
+> Version: (nothing, but technically 1.9.9) -> currently working at the game to completely change everything.
 >
-> Worktime: 50 hours
->
-> Note for developers: 4GDBo full GDJ
+> Worktime: 57 hours
+> 
