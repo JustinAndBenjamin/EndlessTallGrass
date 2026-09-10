@@ -161,7 +161,6 @@ offset_top = 153.0
 offset_right = 150.0
 offset_bottom = 153.0
 grow_vertical = 2
-scale = Vector2(4.1600013, 4.1600013)
 mode = 1
 base_texture = SubResource("AtlasTexture_g4v7s")
 stick_texture = SubResource("AtlasTexture_yf5fn")
