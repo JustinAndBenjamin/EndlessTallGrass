@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xltgaoj6y8no" path="res://script/inventory.gd" id="1_wdn4f"]
 [ext_resource type="Texture2D" uid="uid://dbb46i2shqts0" path="res://Assets/Sprites/inventory.png" id="2_yxepq"]
-[ext_resource type="Texture2D" uid="uid://ba0lwbmpxiyi1" path="res://Assets/Sprites/essential/essential_inventory.png" id="3_0n8tc"]
+[ext_resource type="Texture2D" uid="uid://berhsafqp0sbr" path="res://Assets/Sprites/essential/essential_inventory.png" id="3_0n8tc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hhfpc"]
 atlas = ExtResource("3_0n8tc")
