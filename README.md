@@ -43,17 +43,16 @@ Press <kbd>E</kbd> or the <kbd>I</kbd> button top left to open your inventory.
 - *Thanks to all the developers of Godot Engine!*
 
 </details>
+
+# DEVELOPER INFO
+
+Note for developers: 4GDBo full GDJ
 <br>
+Every commit involving AI must be marked with an '*' starting with commit 252.
 
 > [!NOTE]
 > 
 > Version: (nothing, but technically 1.9.9) -> currently working at the game to completely change everything.
 >
 > Worktime: 57 hours
-
-
-# DEVELOPER INFO
-
-Note for developers: 4GDBo full GDJ
-<br>
-Every commit involving AI must be marked with an '*' starting with commit 257.
+> 
