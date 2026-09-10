@@ -7,8 +7,6 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("READY")
-	
 	# Validierung
 	if scenes.size() != probabilities.size():
 		push_error("Fehler: scenes.size() (%d) != probabilities.size() (%d)" % [scenes.size(), probabilities.size()])
@@ -24,7 +22,6 @@ func _ready() -> void:
 	spawn_grid(area_size)
 	
 func spawn_grid(area_size):
-	print("SpawnGrid")
 	var columns = int(area_size.x / cell_size)
 	var rows = int(area_size.y / cell_size)
 	
@@ -43,7 +40,6 @@ func spawn_grid(area_size):
 					break
 				
 func spawn_object(scene:PackedScene, pos:Vector2):
-	print("SpawnObject")
 	if scene == null:
 		return
 	var instance = scene.instantiate()

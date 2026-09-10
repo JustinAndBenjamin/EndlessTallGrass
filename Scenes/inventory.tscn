@@ -54,6 +54,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok1" unique_id=932103782]
 layout_mode = 1
@@ -84,6 +85,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok2" unique_id=1421008709]
 layout_mode = 1
@@ -114,6 +116,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok3" unique_id=259676709]
 layout_mode = 1
@@ -144,6 +147,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok4" unique_id=1320718269]
 layout_mode = 1
@@ -174,6 +178,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok5" unique_id=663924472]
 layout_mode = 1
@@ -204,6 +209,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok6" unique_id=1982278018]
 layout_mode = 1
@@ -234,6 +240,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok7" unique_id=1220842297]
 layout_mode = 1
@@ -264,6 +271,7 @@ anchor_right = 1.0
 offset_top = -1.0
 offset_bottom = 65.0
 grow_horizontal = 2
+expand_mode = 1
 
 [node name="Label" type="Label" parent="Monpok8" unique_id=1252483572]
 layout_mode = 1
