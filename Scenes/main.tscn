@@ -9,7 +9,6 @@
 [ext_resource type="AudioStream" uid="uid://c2ji2mkfdmqjx" path="res://Assets/sounds/SoundtrackStarfieldSavePoint.mp3" id="7_344ge"]
 [ext_resource type="Texture2D" uid="uid://x8vp6hq6ggum" path="res://Assets/Sprites/essential/essential_joystick.png" id="10_fdnlq"]
 [ext_resource type="PackedScene" uid="uid://dafbnkgmjxy4j" path="res://Scenes/pause_menu.tscn" id="12_6iyac"]
-[ext_resource type="PackedScene" uid="uid://bolodsplnqnqu" path="res://addons/virtual_joystick/virtual_joystick.tscn" id="12_fdnlq"]
 [ext_resource type="Script" uid="uid://dgnvp3ka8drhd" path="res://script/touch_buttons.gd" id="12_jkdf5"]
 [ext_resource type="PackedScene" uid="uid://cmfshvvasmq6w" path="res://Scenes/monpokball_giver.tscn" id="16_k12tt"]
 [ext_resource type="PackedScene" uid="uid://b1636uqslu58g" path="res://Scenes/start_anim.tscn" id="24_3pmx8"]
@@ -26,13 +25,24 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("2_6iyac")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g4v7s"]
-atlas = ExtResource("10_fdnlq")
-region = Rect2(0, 0, 31, 32)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d1ilt"]
+texture = ExtResource("10_fdnlq")
+region_rect = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yf5fn"]
-atlas = ExtResource("10_fdnlq")
-region = Rect2(0, 32, 32, 32)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fdnlq"]
+texture = ExtResource("10_fdnlq")
+region_rect = Rect2(0, 32, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6iyac"]
+load_path = "res://.godot/imported/essential_joystick.png-83b2d99d6649ccdb1c7986d042c8e86a.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6iyac"]
+texture = SubResource("CompressedTexture2D_6iyac")
+region_rect = Rect2(32, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jkdf5"]
+texture = ExtResource("10_fdnlq")
+region_rect = Rect2(30, 32, 34, 32)
 
 [node name="Main" type="Node" unique_id=713701403]
 
@@ -151,22 +161,21 @@ script = ExtResource("12_jkdf5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="TouchButtons" unique_id=302493619]
 
-[node name="VirtualJoystick" parent="TouchButtons/CanvasLayer" unique_id=912784726 instance=ExtResource("12_fdnlq")]
+[node name="VirtualJoystick" type="VirtualJoystick" parent="TouchButtons/CanvasLayer" unique_id=966483125]
 visible = false
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 150.0
-offset_top = 153.0
-offset_right = 150.0
-offset_bottom = 153.0
-grow_vertical = 2
-mode = 1
-base_texture = SubResource("AtlasTexture_g4v7s")
-stick_texture = SubResource("AtlasTexture_yf5fn")
+offset_left = 112.0
+offset_top = 288.0
+offset_right = 152.0
+offset_bottom = 328.0
+theme_override_styles/normal_joystick = SubResource("StyleBoxTexture_d1ilt")
+theme_override_styles/normal_tip = SubResource("StyleBoxTexture_fdnlq")
+theme_override_styles/pressed_joystick = SubResource("StyleBoxTexture_6iyac")
+theme_override_styles/pressed_tip = SubResource("StyleBoxTexture_jkdf5")
+joystick_size = 150.0
+tip_size = 75.0
 action_left = &"move_left"
-action_up = &"move_up"
 action_right = &"move_right"
+action_up = &"move_up"
 action_down = &"move_down"
 
 [node name="StartAnim" parent="." unique_id=1327585273 instance=ExtResource("24_3pmx8")]
